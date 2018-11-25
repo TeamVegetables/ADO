@@ -1,15 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
+using System.Data.SqlClient;
+using ADO.Interfaces;
+using ADO.Queries;
 
 namespace ADO
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
+            var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ADOConnection"].ConnectionString);
+            connection.Open();
+            var queries = new List<IQuery>
+            {
+                new Second(connection)
+            };
+            foreach (var query in queries)
+            {
+                Console.WriteLine(query.Title);
+                query.Execute();
+            }
+
+            Console.ReadKey();
+            connection.Dispose();
         }
     }
 }
