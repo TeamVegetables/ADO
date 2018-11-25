@@ -15,7 +15,8 @@ namespace ADO
             connection.Open();
             var queries = new List<IQuery>
             {
-                new Second(connection)
+                new Second(connection),
+                new Third(connection)
             };
             foreach (var query in queries)
             {
