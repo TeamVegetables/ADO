@@ -20,7 +20,7 @@ namespace ADO
             foreach (var query in queries)
             {
                 Console.WriteLine(query.Title);
-                query.Execute();
+                Console.WriteLine(query.Execute());
             }
 
             Console.ReadKey();
