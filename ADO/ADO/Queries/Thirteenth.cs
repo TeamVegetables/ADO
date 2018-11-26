@@ -4,14 +4,14 @@ using ADO.Interfaces;
 
 namespace ADO.Queries
 {
-    public class Third : IQuery
+    public class Thirteenth : IQuery
     {
         private readonly IDbConnection _connection;
 
-        public Third(IDbConnection connection)
+        public Thirteenth(IDbConnection connection)
         {
             _connection = connection;
-            Title = "Show the list of first and last names of the employees whose first name begins with letter A";
+            Title = "Show first and last names of the employees who used to serve orders shipped to Madrid";
         }
 
         public string Title { get; }
@@ -20,7 +20,9 @@ namespace ADO.Queries
         {
             var command = _connection.CreateCommand();
             var stringBuilder = new StringBuilder();
-            command.CommandText = "SELECT FirstName, LastName FROM Employees WHERE FirstName LIKE \'A%\';";
+            command.CommandText = "SELECT FirstName, LastName FROM Employees " +
+                                  "JOIN Orders ON Employees.EmployeeID = Orders.EmployeeID " +
+                                  "WHERE ShipCity = 'Madrid'; ";
             using (var reader = command.ExecuteReader())
             {
                 while (reader.Read())
@@ -33,3 +35,4 @@ namespace ADO.Queries
         }
     }
 }
+
