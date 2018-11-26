@@ -16,15 +16,19 @@ namespace ADO
             var queries = new List<IQuery>
             {
                 new Second(connection),
-                new Third(connection)
+                new Third(connection),
+                new Twelfth(connection),
+                new TwentySecond(connection),
+                new ThirtySecond(connection)
             };
             foreach (var query in queries)
             {
+                Console.Clear();
                 Console.WriteLine(query.Title);
                 Console.WriteLine(query.Execute());
+                Console.ReadKey();
             }
 
-            Console.ReadKey();
             connection.Dispose();
         }
     }

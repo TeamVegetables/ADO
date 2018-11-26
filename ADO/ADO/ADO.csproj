@@ -50,6 +50,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries\Second.cs" />
     <Compile Include="Queries\Third.cs" />
+    <Compile Include="Queries\ThirtySecond.cs" />
+    <Compile Include="Queries\Twelfth.cs" />
+    <Compile Include="Queries\TwentySecond.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
