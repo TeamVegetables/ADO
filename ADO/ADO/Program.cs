@@ -15,10 +15,14 @@ namespace ADO
             connection.Open();
             var queries = new List<IQuery>
             {
+                new First(connection),
                 new Second(connection),
                 new Third(connection),
+                new Eleventh(connection),
                 new Twelfth(connection),
+                new TwentyFirst(connection),
                 new TwentySecond(connection),
+                new ThirtyFirst(connection),
                 new ThirtySecond(connection)
             };
             foreach (var query in queries)
