@@ -18,10 +18,16 @@ namespace ADO
                 new First(connection),
                 new Second(connection),
                 new Third(connection),
+                new Sixth(connection),
                 new Eleventh(connection),
                 new Twelfth(connection),
+                new Sixteenth(connection),
+                new Nineteenth(connection),
+                new Twentieth(connection),
                 new TwentyFirst(connection),
                 new TwentySecond(connection),
+                new TwentyThird(connection),
+                new TwentySixth(connection),
                 new ThirtyFirst(connection),
                 new ThirtySecond(connection)
             };
