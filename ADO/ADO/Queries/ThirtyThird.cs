@@ -27,7 +27,7 @@ namespace ADO.Queries
             {
                 while (reader.Read())
                 {
-                    stringBuilder.AppendFormat("{0}\t{1}\n", reader["FirstName"], reader["LastName"]);
+                    stringBuilder.AppendFormat("UPDATED WHERE LastName = 'Mike' AND Notes LIKE 'Adam'\n");
                 }
             }
 
