@@ -55,11 +55,14 @@
     <Compile Include="Queries\Nineteenth.cs" />
     <Compile Include="Queries\Ninth.cs" />
     <Compile Include="Queries\Second.cs" />
+    <Compile Include="Queries\Seventeenth.cs" />
+    <Compile Include="Queries\Seventh.cs" />
     <Compile Include="Queries\Sixteenth.cs" />
     <Compile Include="Queries\Sixth.cs" />
     <Compile Include="Queries\Tenth.cs" />
     <Compile Include="Queries\Third.cs" />
     <Compile Include="Queries\Thirteenth.cs" />
+    <Compile Include="Queries\Thirtieth.cs" />
     <Compile Include="Queries\ThirtyFirst.cs" />
     <Compile Include="Queries\ThirtySecond.cs" />
     <Compile Include="Queries\ThirtyThird.cs" />
@@ -67,7 +70,9 @@
     <Compile Include="Queries\Twentieth.cs" />
     <Compile Include="Queries\TwentyFifth.cs" />
     <Compile Include="Queries\TwentyFirst.cs" />
+    <Compile Include="Queries\TwentyNinth.cs" />
     <Compile Include="Queries\TwentySecond.cs" />
+    <Compile Include="Queries\TwentySeventh.cs" />
     <Compile Include="Queries\TwentySixth.cs" />
     <Compile Include="Queries\TwentyThird.cs" />
   </ItemGroup>
