@@ -48,10 +48,13 @@
     <Compile Include="Interfaces\IQuery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\Eigth.cs" />
     <Compile Include="Queries\Eleventh.cs" />
     <Compile Include="Queries\Fifteenth.cs" />
     <Compile Include="Queries\Fifth.cs" />
     <Compile Include="Queries\First.cs" />
+    <Compile Include="Queries\Fourteenth.cs" />
+    <Compile Include="Queries\Fourth.cs" />
     <Compile Include="Queries\Nineteenth.cs" />
     <Compile Include="Queries\Ninth.cs" />
     <Compile Include="Queries\Second.cs" />

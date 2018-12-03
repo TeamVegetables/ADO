@@ -18,17 +18,17 @@ namespace ADO
                 new First(connection),
                 new Second(connection),
                 new Third(connection),
-                //Fourth
+                new Fourth(connection),
                 new Fifth(connection),
                 new Sixth(connection),
                 new Seventh(connection),
-                //
+                new Eigth(connection),
                 new Ninth(connection),
                 new Tenth(connection),
                 new Eleventh(connection),
                 new Twelfth(connection),
                 new Thirteenth(connection),
-                //Fourteenth
+                new Fourteenth(connection),
                 new Fifteenth(connection),
                 new Sixteenth(connection),
                 new Seventeenth(connection),
