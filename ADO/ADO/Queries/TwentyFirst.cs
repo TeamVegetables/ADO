@@ -34,7 +34,7 @@ namespace ADO.Queries
             {
                 while (reader.Read())
                 {
-                    stringBuilder.AppendFormat("{0, -20} {1,-3} {2}", reader["ContactName"], reader["Count"], reader["PriceSum"]);
+                    stringBuilder.AppendFormat("{0, -20} {1,-3} {2}\n", reader["ContactName"], reader["Count"], reader["PriceSum"]);
                 }
             }
 

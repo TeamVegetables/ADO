@@ -30,7 +30,7 @@ namespace ADO.Queries
                 {
                     for (int i = 0; i < reader.FieldCount; ++i)
                     {
-                        stringBuilder.AppendFormat("{0,-10}{1,-10}{2}", reader["FirstName"], reader["LastName"], reader["OrdersAmount"]);
+                        stringBuilder.AppendFormat("{0,-10}{1,-10}{2}\n", reader["FirstName"], reader["LastName"], reader["OrdersAmount"]);
                     }
                 }
             }

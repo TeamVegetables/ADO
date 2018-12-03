@@ -27,7 +27,7 @@ namespace ADO.Queries
                 {
                     for (int i = 0; i < reader.FieldCount; ++i)
                     {
-                        stringBuilder.AppendFormat("{0,-20}{1}", reader.GetName(i), reader.GetValue(i));
+                        stringBuilder.AppendFormat("{0,-20}{1}\n", reader.GetName(i), reader.GetValue(i));
                     }
                 }
             }

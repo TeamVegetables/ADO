@@ -12,7 +12,7 @@ namespace ADO.Queries
         public Fourth(IDbConnection connection)
         {
             _connection = connection;
-            Title = "4.	Show the list of first, last names and ages of the employees whose age is greater than 55";
+            Title = "Show the list of first, last names and ages of the employees whose age is greater than 55";
         }
 
         public string Title { get; }
@@ -32,7 +32,7 @@ namespace ADO.Queries
                 {
                     for (int i = 0; i < reader.FieldCount; ++i)
                     {
-                        stringBuilder.AppendFormat("{0, -20} {1}\t{2}", reader["FirstName"], reader["LastName"], reader["Age"]);
+                        stringBuilder.AppendFormat("{0, -20} {1}\t{2}\n", reader["FirstName"], reader["LastName"], reader["Age"]);
                     }
                 }
             }

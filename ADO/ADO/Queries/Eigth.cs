@@ -30,7 +30,7 @@ namespace ADO.Queries
                 {
                     for (int i = 0; i < reader.FieldCount; ++i)
                     {
-                        stringBuilder.AppendFormat("{0}\t{1}", reader["City"], reader["AvgBirth"]);
+                        stringBuilder.AppendFormat("{0}\t{1}\n", reader["City"], reader["AvgBirth"]);
                     }
                 }
             }

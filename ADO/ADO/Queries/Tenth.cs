@@ -21,12 +21,14 @@ namespace ADO.Queries
             var command = _connection.CreateCommand();
             var stringBuilder = new StringBuilder();
 
-            command.CommandText = "SELECT COUNT(*) AS EmployeesAmount FROM Employees WHERE City = 'London';";
+            command.CommandText = string.Concat("SELECT TOP 3 FirstName, LastName, DATEDIFF(year, BirthDate, GETDATE()) AS Age ",
+                "FROM Employees ",
+                "ORDER BY BirthDate;");
             using (var reader = command.ExecuteReader())
             {
                 while (reader.Read())
                 {
-                    stringBuilder.Append($"{ reader["FirstName"]} {reader["LastName"]} {reader["Age"]}\n");
+                    stringBuilder.AppendFormat("{0, -10} {1, -10} {2}\n", reader["FirstName"], reader["LastName"], reader["Age"]);
                 }
             }
 

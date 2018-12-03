@@ -11,7 +11,7 @@ namespace ADO.Queries
         public Sixth(IDbConnection connection)
         {
             _connection = connection;
-            Title = "6.	Calculate the greatest, the smallest and the average age among the employees from London.";
+            Title = "Calculate the greatest, the smallest and the average age among the employees from London.";
         }
 
         public string Title { get; }

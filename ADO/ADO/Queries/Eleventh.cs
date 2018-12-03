@@ -25,7 +25,7 @@ namespace ADO.Queries
             {
                 while (reader.Read())
                 {
-                    stringBuilder.AppendFormat(reader["City"].ToString());
+                    stringBuilder.AppendFormat("{0}\n", reader["City"].ToString());
                 }
             }
             return stringBuilder.ToString();

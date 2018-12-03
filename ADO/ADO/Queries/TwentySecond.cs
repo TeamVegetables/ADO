@@ -31,7 +31,7 @@ namespace ADO.Queries
             {
                 while (reader.Read())
                 {
-                    stringBuilder.Append(reader["ContactName"]);
+                    stringBuilder.AppendFormat("{0}\n", reader["ContactName"]);
                     stringBuilder.AppendLine();
                 }
             }
