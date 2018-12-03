@@ -32,24 +32,24 @@ namespace ADO
                 new Fifteenth(connection),
                 new Sixteenth(connection),
                 new Seventeenth(connection),
-                //
+                new Eighteenth(connection),
                 new Nineteenth(connection),
                 new Twentieth(connection),
                 new TwentyFirst(connection),
-                //
+                new TwentySecond(connection),
                 new TwentyThird(connection),
-                //
+                new TwentyFourth(connection),
                 new TwentyFifth(connection),
                 new TwentySixth(connection),
                 new TwentySeventh(connection),
-                //
+                new TwentyEighth(connection),
                 new TwentyNinth(connection),
                 new Thirtieth(connection),
                 new ThirtyFirst(connection),
                 new ThirtySecond(connection),
-                new ThirtyThird(connection)
-                //
-                //
+                new ThirtyThird(connection),
+                new ThirtyFourth(connection),
+                new ThirtyFifth(connection)
 
             };
             foreach (var query in queries)

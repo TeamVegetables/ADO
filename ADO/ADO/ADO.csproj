@@ -48,6 +48,7 @@
     <Compile Include="Interfaces\IQuery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\Eighteenth.cs" />
     <Compile Include="Queries\Eigth.cs" />
     <Compile Include="Queries\Eleventh.cs" />
     <Compile Include="Queries\Fifteenth.cs" />
@@ -66,13 +67,17 @@
     <Compile Include="Queries\Third.cs" />
     <Compile Include="Queries\Thirteenth.cs" />
     <Compile Include="Queries\Thirtieth.cs" />
+    <Compile Include="Queries\ThirtyFifth.cs" />
     <Compile Include="Queries\ThirtyFirst.cs" />
+    <Compile Include="Queries\ThirtyFourth.cs" />
     <Compile Include="Queries\ThirtySecond.cs" />
     <Compile Include="Queries\ThirtyThird.cs" />
     <Compile Include="Queries\Twelfth.cs" />
     <Compile Include="Queries\Twentieth.cs" />
+    <Compile Include="Queries\TwentyEighth.cs" />
     <Compile Include="Queries\TwentyFifth.cs" />
     <Compile Include="Queries\TwentyFirst.cs" />
+    <Compile Include="Queries\TwentyFourth.cs" />
     <Compile Include="Queries\TwentyNinth.cs" />
     <Compile Include="Queries\TwentySecond.cs" />
     <Compile Include="Queries\TwentySeventh.cs" />
