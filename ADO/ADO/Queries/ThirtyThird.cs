@@ -22,14 +22,9 @@ namespace ADO.Queries
             var stringBuilder = new StringBuilder();
             command.CommandText = "UPDATE Employees " +
                                   "SET City = 'Lexington' " +
-                                  "WHERE LastName = 'Mike' AND Notes LIKE 'Adam';";
-            using (var reader = command.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    stringBuilder.AppendFormat("UPDATED WHERE LastName = 'Mike' AND Notes LIKE 'Adam'\n");
-                }
-            }
+                                  "WHERE LastName = 'Callahan';";
+            
+            stringBuilder.AppendFormat($"Update {command.ExecuteNonQuery()} row\n");
 
             return stringBuilder.ToString();
         }

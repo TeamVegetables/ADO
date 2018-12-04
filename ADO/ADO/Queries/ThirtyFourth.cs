@@ -23,16 +23,8 @@ namespace ADO.Queries
             command.CommandText = "UPDATE Employees " +
                                   "SET HireDate = '2018-11-18' " +
                                   "WHERE Notes LIKE 'Adam';";
-            using (var reader = command.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    for (int i = 0; i < reader.FieldCount; ++i)
-                    {
-                        stringBuilder.AppendFormat($"\nUpdate {command.ExecuteNonQuery()} row");
-                    }
-                }
-            }
+    
+            stringBuilder.AppendFormat($"\nUpdate {command.ExecuteNonQuery()} row");
 
             return stringBuilder.ToString();
         }

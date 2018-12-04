@@ -22,17 +22,9 @@ namespace ADO.Queries
         {
             var command = _connection.CreateCommand();
             var stringBuilder = new StringBuilder();
-            command.CommandText = "DELETE FROM Employees WHERE LastName = 'John' AND FirstName = 'Doe' AND Notes LIKE 'Adam';";
-            using (var reader = command.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    for (int i = 0; i < reader.FieldCount; ++i)
-                    {
-                        stringBuilder.AppendFormat("Deleted {0} rows\n", command.ExecuteNonQuery());
-                    }
-                }
-            }
+            command.CommandText = "DELETE FROM Employees WHERE LastName = 'Derek' AND FirstName = 'Lunsford';";
+
+            stringBuilder.AppendFormat("Deleted {0} rows\n", command.ExecuteNonQuery());
 
             return stringBuilder.ToString();
         }
